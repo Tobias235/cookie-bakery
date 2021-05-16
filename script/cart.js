@@ -196,7 +196,7 @@ function deleteButtons() {
 function checkOut() {
   let checkoutBtn = document.querySelector(".checkoutBtn");
   checkoutBtn.addEventListener("click", () => {
-    location.href = "custinfo.html";
+    location.href = "custInfo.html";
   });
 }
 

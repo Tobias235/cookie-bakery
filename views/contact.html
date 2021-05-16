@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Bakery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../style/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="navLinks">
+          <a href="landingpage.html" class="btn homeBtns">HOME</a>
+          <a href="about.html" class="btn aboutBtns">ABOUT</a>
+          <a href="contact.html" class="btn contactBtns">CONTACT</a>
+
+          <div class="backgroundLogo"></div>
+          <div class="logo">
+            <object
+              data="../pictures/svgLogo.svg"
+              id="logo"
+              class="homeBtns"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+              <a href="cakes.html" class="cakesBtns" href="#">CAKES</a>
+              <a href="cookies.html" class="cookiesBtns" href="#">COOKIES</a>
+            </div>
+          </li>
+          <a id="searchBtn" class="btn">SEARCH</a>
+          <a href="cart.html" id="cartBtn" class="btn">CART</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER  -->
+    <section class="p-menu1">
+      <nav id="navbar" class="navigation" role="navigation">
+        <input id="toggle1" type="checkbox" />
+        <label class="hamburger1" for="toggle1">
+          <div class="top"></div>
+          <div class="meat"></div>
+          <div class="bottom"></div>
+        </label>
+
+        <nav class="menu1">
+          <a class="link1 homeBtns">HOME</a>
+          <a class="link1 aboutBtns">ABOUT</a>
+          <a class="link1 contactBtns">CONTACT</a>
+          <a class="link1 cakesBtns">CAKES</a>
+          <a class="link1 cookiesBtns">COOKIES</a>
+        </nav>
+      </nav>
+      <div class="logo">
+        <object
+          data="../pictures/svgLogo.svg"
+          id="logo"
+          type="image/svg+xml"
+        ></object>
+      </div>
+    </section>
+
+    <div class="contactBackground">
+      <div class="topofJumbo">
+        <div>
+          <div class="contactTextTop">
+            <h1>OPEN HOURS</h1>
+            <p>Mon-Fri 8AM-8PM</p>
+            <p>Sat-Sun 10AM-8PM</p>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1573050435329-27ff3181380c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+            class="contactImg"
+          />
+        </div>
+      </div>
+      <div class="leftContactJumbo">
+        <div id="contactForm">
+          <div class="inputForm">
+            <p class="questionText">
+              Feel free to ask us any question/s or for help
+            </p>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              class="fieldCheck contactName"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter Your E-Mail Address"
+              class="fieldCheck contactMail"
+              required
+            />
+            <textarea
+              name="message"
+              maxlength="2000"
+              placeholder="Enter Your Question/s"
+              class="fieldCheck"
+              required
+            ></textarea>
+            <button class="contactBtn">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactMiddle"></div>
+
+      <div class="rightContactJumbo">
+        <div>
+          <div class="contactHeader">
+            <h1 class="faqHeader">FAQ</h1>
+          </div>
+          <ul class="faq">
+            <li>xxxxxxxxxxxxxxx</li>
+            <p>A. xxxxxxxxxxxxx</p>
+            <li>xxxxxxxxxxxxxxx</li>
+            <p>A. xxxxxxxxxxxxx</p>
+            <li>xxxxxxxxxxxxxxx</li>
+            <p>A. xxxxxxxxxxxxx</p>
+            <li>xxxxxxxxxxxxxxx</li>
+            <p>A. xxxxxxxxxxxxx</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a href="https://www.vecteezy.com/free-vector/logo">Logo by Vecteezy</a>
+    </footer>
+
+    <script src="../script/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="../style/checkout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="navLinks">
+          <a href="landingpage.html" class="btn homeBtns">HOME</a>
+          <a href="about.html" class="btn aboutBtns">ABOUT</a>
+          <a href="contact.html" class="btn contactBtns">CONTACT</a>
+
+          <div class="backgroundLogo"></div>
+          <div class="logo">
+            <object
+              data="../pictures/svgLogo.svg"
+              id="logo"
+              class="homeBtns"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+              <a href="cakes.html" class="cakesBtns" href="#">CAKES</a>
+              <a href="cookies.html" class="cookiesBtns" href="#">COOKIES</a>
+            </div>
+          </li>
+          <a id="searchBtn" class="btn">SEARCH</a>
+          <a href="cart.html" id="cartBtn" class="btn">CART</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER  -->
+    <section class="p-menu1">
+      <nav id="navbar" class="navigation" role="navigation">
+        <input id="toggle1" type="checkbox" />
+        <label class="hamburger1" for="toggle1">
+          <div class="top"></div>
+          <div class="meat"></div>
+          <div class="bottom"></div>
+        </label>
+
+        <nav class="menu1">
+          <div class="link1"><span>HOME</span></div>
+          <div class="link1"><span>ABOUT</span></div>
+          <div class="link1"><span>CONTACT</span></div>
+          <div class="link1"><span>CAKES</span></div>
+          <div class="link1"><span>COOKIES</span></div>
+        </nav>
+      </nav>
+      <div class="logo">
+        <object
+          data="../pictures/svgLogo.svg"
+          id="logo"
+          type="image/svg+xml"
+        ></object>
+      </div>
+    </section>
+
+    <div class="orderConfBackground">
+      <div class="orderSummaryMedia">
+        <div class="mediaSummaryCenter">
+          <div class="showOrder">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Show order summary</p>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="orderRight">
+            <p class="productPrice">₱99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="orderConfLeft">
+        <div class="orderConfText">
+          <h1 id="customerTitle">
+            Thank you Tobias. Your order #1234 is now confirmed
+          </h1>
+          <p class="orderConf">
+            You will receive an confirmation email shortly
+          </p>
+        </div>
+
+        <div class="orderUpdate">
+          <h1 id="orderUpdateTitle">Order Updates</h1>
+          <p class="orderConf">
+            You'll get shipping and delivery updates by email
+          </p>
+        </div>
+
+        <div class="customerContainer">
+          <div class="customerLeft">
+            <div class="customerTitles">
+              <div class="customerInfoTitle">
+                <h1 id="customerInformationTitle">Customer Information</h1>
+              </div>
+              <p class="customerInformation">Contact Information</p>
+              <p>tobias.prepas@gmail.com</p>
+            </div>
+
+            <div>
+              <p class="customerInformation">Shipping Address</p>
+              <p>Elaine Miranday</p>
+              <p>2600 Westbank Road, Pasig, Metro Manila</p>
+              <p>1609 Pasig PH-00</p>
+              <p>Philippines</p>
+              <p>+63 928 202 4402</p>
+              <div class="shipMethod">
+                <p class="shippingTitle">Shipping Method</p>
+                <p>Standard Delivery - Free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="customerRight">
+            <div class="customerTitles">
+              <p class="customerInformation">Payment Method</p>
+              <p>Cash on Delivery (COD)</p>
+            </div>
+
+            <p class="customerInformation">Billing Address</p>
+            <p>Tobias Prepas</p>
+            <p>Radhusvägen 20E</p>
+            <p>30256 Halmstad</p>
+            <p>Sweden</p>
+            <p>+46 760 980 399</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="customerSummary">
+        <div class="orderSummary">
+          <div class="orderLeft">
+            <img src="../pictures/productPic.jpg" class="productPic" />
+            <p class="productText">Chocolate Caramel</p>
+          </div>
+          <div class="orderRight">
+            <p class="productPrice">₱99</p>
+          </div>
+        </div>
+        <div class="borderBottom"></div>
+        <div class="orderSummaryColumn">
+          <div class="orderLeftColumn">
+            <p>Subtotal</p>
+            <p>Shipping</p>
+          </div>
+          <div class="orderRight">
+            <p class="productPrice">₱99</p>
+            <p class="productPrice">Calculated at next step</p>
+          </div>
+        </div>
+        <div class="borderBottom"></div>
+
+        <div class="orderSummary">
+          <div class="orderLeft">
+            <p class="productTotal">Total</p>
+          </div>
+          <div class="orderRight">
+            <p class="productPrice">₱99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a href="https://www.vecteezy.com/free-vector/logo">Logo by Vecteezy</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,652 @@
+@media screen and (min-width: 770px) {
+  /* BACKGROUND AND NAVBAR */
+  html {
+    height: 100%;
+    background-image: url(../pictures/indexBackground1.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  .container {
+    margin: auto;
+    padding: 11px;
+  }
+
+  nav {
+    top: 6%;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navLinks {
+    display: flex;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid white;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #logo {
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 240px;
+    min-width: 150px;
+    align-items: center;
+    background: rgb(167, 95, 74);
+    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 14px;
+  }
+
+  .logo {
+    width: 1800px;
+    height: 145px;
+    display: block;
+  }
+
+  .btn {
+    height: 25px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid white;
+  }
+
+  footer {
+    flex-basis: auto;
+    flex-grow: 0;
+    bottom: 0;
+    flex-shrink: 0;
+    padding: 5px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .p-menu1 {
+    display: none;
+  }
+
+  /* ABOUT US PAGE */
+
+  .productBackground {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+    margin: 12em auto;
+    padding: 0.75em 0.75em 0;
+    padding-bottom: 40px;
+    width: 90%;
+    height: auto;
+    justify-content: space-around;
+    border-radius: 15px;
+  }
+
+  .rightSide {
+    float: right;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+  }
+
+  .middle {
+    border-left: 5px solid black;
+    margin-top: 15px;
+  }
+
+  .leftSide {
+    float: left;
+    display: block;
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .aboutImg {
+    max-width: 60%;
+    height: auto;
+    border: 5px solid black;
+    margin: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  /* CONTACT PAGE BEGINS */
+
+  .contactBackground {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+    margin: 12em auto;
+    padding: 0.75em 0.75em 0;
+    padding-bottom: 70px;
+    width: 45%;
+    height: 620px;
+    min-width: 520px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+    border: 2px solid black;
+  }
+
+  .topofJumbo {
+    float: top;
+    height: 54%;
+    width: 100%;
+  }
+
+  .contactImg {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+  }
+
+  .topofJumbo div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactTextTop {
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftContactJumbo {
+    float: left;
+    height: 46%;
+    width: 40%;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+    border: 2px solid black;
+    padding-bottom: 25px;
+  }
+
+  .questionText {
+    margin-bottom: 10px;
+  }
+
+  .inputForm input {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 30px;
+  }
+
+  .inputForm textarea {
+    height: 100px;
+    width: 90%;
+    font-family: arial;
+  }
+
+  .inputForm {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .contactBtn {
+    margin-top: 15px;
+    width: 40%;
+  }
+
+  .contactMiddle {
+    width: 18%;
+  }
+
+  .rightContactJumbo {
+    float: right;
+    height: auto;
+    width: 37%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+    border: 2px solid black;
+  }
+
+  .rightContactJumbo :first-child {
+    width: 100%;
+  }
+
+  .faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .contactHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .faqHeader {
+    font-size: 23px;
+    margin-top: 0px;
+  }
+
+  .faq li {
+    margin-left: 10px;
+  }
+  .faq p {
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* POLICY PAGES BEGINS */
+
+  .policyBackground {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+    margin: 12em auto;
+    padding: 0.75em 0.75em 0;
+    padding-bottom: 70px;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+    border: 2px solid black;
+  }
+  .textContainer h1 {
+    text-align: center;
+  }
+
+  .policyText {
+    margin: 30px;
+  }
+  /* POLICY PAGES ENDS */
+}
+
+/* MOBILE SIZE PAGE BEGINS HERE */
+
+@media screen and (max-width: 769px) {
+  html {
+    height: 100%;
+    background-image: url(../pictures/indexBackground1.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  .logo {
+    width: 100px;
+    height: 145px;
+    display: block;
+  }
+
+  #logo {
+    position: fixed;
+    top: 1%;
+    left: 35%;
+    max-width: 170px;
+    min-width: 150px;
+    background: rgb(167, 95, 74);
+    z-index: 1;
+  }
+
+  nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    height: 65px;
+    width: 100%;
+  }
+
+  footer {
+    flex-basis: auto;
+    flex-grow: 0;
+    bottom: 0;
+    flex-shrink: 0;
+    padding: 5px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .container {
+    display: none;
+  }
+  .p-menu1 {
+    height: 100%;
+  }
+
+  /* Hamburger */
+  .hamburger1 {
+    height: 45px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger1 div {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #toggle1 {
+    display: none;
+  }
+
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px;
+  }
+
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  #toggle1:checked ~ .menu1 {
+    height: 205px;
+    width: 30%;
+    margin-top: 65px;
+  }
+
+  /* Menu */
+  .menu1 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .link1 {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  /* ABOUT US PAGE BEGINS HERE */
+
+  .productBackground {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+    margin: 2em auto;
+    padding: 0.75em 0.75em 0;
+    padding-bottom: 40px;
+    width: 90%;
+    height: auto;
+    justify-content: space-around;
+    border-radius: 15px;
+  }
+
+  .rightSide {
+    float: right;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    border: 3px solid gray;
+  }
+
+  .leftSide {
+    float: left;
+    display: block;
+    width: 40%;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 3px solid gray;
+  }
+
+  .aboutImg {
+    max-width: 60%;
+    height: auto;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  /* CONTACT PAGE BEGINS  */
+
+  .contactBackground {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+    margin: 2em auto;
+    padding: 0.75em 0.75em 0;
+    padding-bottom: 40px;
+    width: 42%;
+    height: auto;
+    min-width: 400px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topofJumbo {
+    float: top;
+    height: 54%;
+    width: 100%;
+  }
+
+  .contactImg {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+  }
+
+  .topofJumbo div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactTextTop {
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactMiddle {
+    display: block;
+    width: 11.5%;
+  }
+
+  .leftContactJumbo {
+    width: 78%;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+    border: 2px solid black;
+    padding-bottom: 25px;
+  }
+
+  .questionText {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .inputForm input {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 20px;
+    font-size: 11px;
+  }
+
+  .inputForm textarea {
+    height: 70px;
+    width: 90%;
+    font-family: arial;
+    font-size: 11px;
+  }
+
+  .inputForm {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .contactMiddle {
+    width: 10%;
+  }
+
+  .rightContactJumbo {
+    width: 78%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+    border: 2px solid black;
+  }
+
+  .rightContactJumbo :first-child {
+    width: 100%;
+  }
+
+  .faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    font-size: 13px;
+  }
+
+  .contactHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .faqHeader {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .faq li {
+    margin-bottom: 0px;
+    margin-left: 40px;
+  }
+  .faq p {
+    margin-left: 35px;
+    margin-bottom: 10px;
+  }
+
+  /* POLICY PAGES BEGINS */
+
+  .policyBackground {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+    margin: 2em auto;
+    padding: 0.75em 0.75em 0;
+    padding-bottom: 70px;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+    border: 2px solid black;
+  }
+  .textContainer h1 {
+    text-align: center;
+  }
+
+  .policyText {
+    margin: 30px;
+  }
+  /* POLICY PAGES ENDS */
+}

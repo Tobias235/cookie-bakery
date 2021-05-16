@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="../style/checkout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="navLinks">
+          <a href="landingpage.html" class="btn homeBtns">HOME</a>
+          <a href="about.html" class="btn aboutBtns">ABOUT</a>
+          <a href="contact.html" class="btn contactBtns">CONTACT</a>
+
+          <div class="backgroundLogo"></div>
+          <div class="logo">
+            <object
+              data="../pictures/svgLogo.svg"
+              id="logo"
+              class="homeBtns"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+              <a href="cakes.html" class="cakesBtns" href="#">CAKES</a>
+              <a href="cookies.html" class="cookiesBtns" href="#">COOKIES</a>
+            </div>
+          </li>
+          <a id="searchBtn" class="btn">SEARCH</a>
+          <a href="cart.html" id="cartBtn" class="btn">CART</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER  -->
+    <section class="p-menu1">
+      <nav id="navbar" class="navigation" role="navigation">
+        <input id="toggle1" type="checkbox" />
+        <label class="hamburger1" for="toggle1">
+          <div class="top"></div>
+          <div class="meat"></div>
+          <div class="bottom"></div>
+        </label>
+
+        <nav class="menu1">
+          <div class="link1"><span>HOME</span></div>
+          <div class="link1"><span>ABOUT</span></div>
+          <div class="link1"><span>CONTACT</span></div>
+          <div class="link1"><span>CAKES</span></div>
+          <div class="link1"><span>COOKIES</span></div>
+        </nav>
+      </nav>
+      <div class="logo">
+        <object
+          data="../pictures/svgLogo.svg"
+          id="logo"
+          type="image/svg+xml"
+        ></object>
+      </div>
+    </section>
+
+    <div class="customerInfoBackground">
+      <div class="orderSummaryMedia">
+        <div class="mediaSummaryCenter">
+          <div class="showOrder">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Show order summary</p>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="orderRight">
+            <p class="productPrice">₱99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="custInfoLeft">
+        <div class="checkoutOrder">
+          <a href="">Cart </a>
+          <i class="fas fa-chevron-right fa-sm"></i>
+          <a href="">Information </a>
+          <i class="fas fa-chevron-right fa-sm"></i>
+          <a href="">Shipping </a>
+          <i class="fas fa-chevron-right fa-sm"></i>
+          <a href="">Payment</a>
+        </div>
+
+        <div class="contactInfo">
+          <h1>Contact Information</h1>
+          <div>
+            <input
+              type="email"
+              placeholder="E-Mail Address"
+              class="fullSizeContact"
+            />
+            <div class="emailRequestBox">
+              <input type="checkbox" /><label class="emailRequest"
+                >Keep me up to date on news and exclusive offers</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="inputForm">
+          <h1>Shipping Address</h1>
+          <div class="centerInput">
+            <div>
+              <input type="text" placeholder="First Name" class="halfSize" />
+              <input type="text" placeholder="Last Name" class="halfSize" />
+            </div>
+            <input type="tel" placeholder="Phone Number" class="fullSize" />
+            <input type="text" placeholder="Address" class="fullSize" />
+            <div>
+              <input type="number" placeholder="Zipcode" class="halfSize" />
+              <input type="text" placeholder="City" class="halfSize" />
+            </div>
+            <input type="text" placeholder="Region" class="fullSize" />
+          </div>
+
+          <div class="contactBtns">
+            <div>
+              <button class="contactBtn">
+                <a href="shipping.html">Continue to Shipping</a>
+              </button>
+              <div class="returnBtn"><span>Return To Cart</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custInfoRight">
+        <div class="orderSummary">
+          <div class="orderLeft">
+            <img src="../pictures/productPic.jpg" class="productPic" />
+            <p class="productText">Chocolate Caramel</p>
+          </div>
+          <div class="orderRight">
+            <p class="productPrice">₱99</p>
+          </div>
+        </div>
+        <div class="borderBottom"></div>
+        <div class="orderSummaryColumn">
+          <div class="orderLeftColumn">
+            <p>Subtotal</p>
+            <p>Shipping</p>
+          </div>
+          <div class="orderRight">
+            <p class="productPrice">₱99</p>
+            <p class="productPrice">Calculated at next step</p>
+          </div>
+        </div>
+        <div class="borderBottom"></div>
+
+        <div class="orderSummary">
+          <div class="orderLeft">
+            <p class="productTotal">Total</p>
+          </div>
+          <div class="orderRight">
+            <p class="productPrice">₱99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a href="https://www.vecteezy.com/free-vector/logo">Logo by Vecteezy</a>
+    </footer>
+  </body>
+</html>

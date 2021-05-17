@@ -1038,6 +1038,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+
   .logo {
     width: 100px;
     height: 145px;
@@ -1046,8 +1047,7 @@ a {
 
   #logo {
     position: fixed;
-    top: 6%;
-    left: 50%;
+    left: 33%;
     max-width: 170px;
     min-width: 150px;
     background: rgb(167, 95, 74);
@@ -1066,9 +1066,12 @@ a {
   .container {
     display: none;
   }
+  
   .p-menu1 {
     height: 100%;
   }
+
+
 
  /* Hamburger */
  .hamburger1 {

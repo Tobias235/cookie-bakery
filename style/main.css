@@ -332,8 +332,7 @@
 
   #logo {
     position: fixed;
-    top: 1%;
-    left: 35%;
+    left: 33%;
     max-width: 170px;
     min-width: 150px;
     background: rgb(167, 95, 74);
@@ -349,26 +348,14 @@
     width: 100%;
   }
 
-  footer {
-    flex-basis: auto;
-    flex-grow: 0;
-    bottom: 0;
-    flex-shrink: 0;
-    padding: 5px;
-    text-align: center;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
   .container {
     display: none;
   }
+  
   .p-menu1 {
     height: 100%;
   }
+
 
  /* Hamburger */
  .hamburger1 {

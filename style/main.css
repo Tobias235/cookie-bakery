@@ -387,6 +387,7 @@
   /* Hamburger */
   .hamburger1 {
     height: 45px;
+    width: 80%;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -456,6 +457,24 @@
     color: rgb(61, 61, 61);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  .cartIcon {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .fa-shopping-cart {
+    margin-top: 15px;
+    margin-right: 13px;
+    color: white;
+  }
+
+  .cartLink {
+    height: 100%;
+    z-index: 1;
   }
 
   /* ABOUT US PAGE BEGINS HERE */

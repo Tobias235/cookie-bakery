@@ -360,6 +360,24 @@ a {
   transition: all 0.3s ease;
 }
 
+.cartIcon {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-shopping-cart {
+  margin-top: 15px;
+  margin-right: 13px;
+  color: white;
+}
+
+.cartLink {
+  height: 100%;
+  z-index: 1;
+}
+
   .background {
     display: block;
     width: 80%;

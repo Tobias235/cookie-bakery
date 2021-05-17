@@ -59,17 +59,16 @@
   }
   
   #logo {
-    display: block;
-    position: relative;
-    top: 10%;
+    position: fixed;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 240px;
+    max-width: 170px;
     min-width: 150px;
-    align-items: center;
     background: rgb(167, 95, 74);
     box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 14px;
+    border-radius: 15px;
+    z-index: 1;
   }
   
   .logo {
@@ -111,20 +110,20 @@
     flex-wrap: wrap;
     margin-top: 0;
     margin: 12.5em auto;
-    padding: 0.75em 0.75em 0;
     width: 900px;
     height: 600px;
     justify-content: space-around;
-    border-radius: 15px;
     overflow: hidden;
+    border-bottom: 5px solid black;
   }
 
   #slides {
-    width: 900px;
+    width: 100%;
     height: 600px;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
+    border: 5px solid black;
   }
 
   .slide {
@@ -142,6 +141,8 @@
   .showing {
     display: block;
     z-index: 2;
+    width: 100%;
+    height: 100%;
   }
 
   .slide-container #prev,
@@ -159,12 +160,6 @@
     user-select: none;
   }
 
-  .slide-container #prev:hover,
-  .slide-container #next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-  }
-
   .slide-container #prev {
     left: -22%;
     float: left;
@@ -176,23 +171,28 @@
 
   .slide:nth-of-type(1) {
     background-image: url("https://images.unsplash.com/photo-1582659042116-63f96b514135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .slide:nth-of-type(2) {
     background-image: url("https://images.unsplash.com/photo-1566217225167-ea65c6ccabb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .slide:nth-of-type(3) {
     background-image: url("https://images.unsplash.com/photo-1499889808931-317a0255c0e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .slide:nth-of-type(4) {
     background-image: url("https://images.unsplash.com/photo-1559490882-9f907ae78499?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .slide:nth-of-type(5) {
     background-image: url("https://images.unsplash.com/photo-1572095755818-8fd546d228a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80");
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #attribution {
@@ -348,20 +348,19 @@
     flex-wrap: wrap;
     margin-top: 0;
     margin: 0em auto;
-    padding: 0.75em 0.75em 0;
-    max-width: 500px;
-    height: 600px;
+    max-width: 600px;
+    height: 450px;
     justify-content: space-around;
-    border-radius: 15px;
     overflow: hidden;
   }
 
   #slides {
     width: 100%;
-    height: 100%;
+    height: 310px;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
+    border: 5px solid black;
   }
 
   .slide {
@@ -385,7 +384,7 @@
   .slide-container #next {
     cursor: pointer;
     position: relative;
-    top: 30%;
+    top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -394,12 +393,6 @@
     font-size: 20px;
     transition: all 0.6s ease;
     user-select: none;
-  }
-
-  .slide-container #prev:hover,
-  .slide-container #next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
   }
 
   .slide-container #prev {
@@ -558,20 +551,20 @@
     flex-wrap: wrap;
     margin-top: 0;
     margin: 12.5em auto;
-    padding: 0.75em 0.75em 0;
     max-width: 900px;
-    height: 600px;
+    height: 550px;
     justify-content: space-around;
-    border-radius: 15px;
     overflow: hidden;
+    border-bottom: 5px solid black;
   }
 
   #slides {
     width: 900px;
-    height: 600px;
+    height: 550px;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
+    border: 5px solid black;
   }
 
   .slide {
@@ -604,12 +597,6 @@
     font-size: 20px;
     transition: all 0.6s ease;
     user-select: none;
-  }
-
-  .slide-container #prev:hover,
-  .slide-container #next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
   }
 
   .slide-container #prev {

@@ -175,23 +175,24 @@
   }
 
   .slide:nth-of-type(1) {
-    background-image: url("https://images.unsplash.com/photo-1590595978583-3967cf17d2ea?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+    background-image: url("https://images.unsplash.com/photo-1582659042116-63f96b514135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-size: 100%;
   }
   .slide:nth-of-type(2) {
-    background-image: url("https://images.unsplash.com/photo-1588807308097-fb6e5047df8c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+    background-image: url("https://images.unsplash.com/photo-1566217225167-ea65c6ccabb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
     background-size: 100%;
   }
   .slide:nth-of-type(3) {
-    background-image: url("https://images.unsplash.com/photo-1588796388882-a4d533c47e5e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+    background-image: url("https://images.unsplash.com/photo-1499889808931-317a0255c0e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-size: 100%;
   }
   .slide:nth-of-type(4) {
-    background-image: url("https://images.unsplash.com/photo-1589808710416-24cf7ac026f2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+    background-image: url("https://images.unsplash.com/photo-1559490882-9f907ae78499?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80");
     background-size: 100%;
   }
   .slide:nth-of-type(5) {
-    background: purple;
+    background-image: url("https://images.unsplash.com/photo-1572095755818-8fd546d228a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80");
+    background-size: 100%;
   }
 
   #attribution {
@@ -220,7 +221,7 @@
 
   #logo {
     position: fixed;
-    left: 33%;
+    left: 31%;
     max-width: 170px;
     min-width: 150px;
     background: rgb(167, 95, 74);

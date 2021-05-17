@@ -6,12 +6,12 @@
     background-size: cover;
     background-repeat: repeat;
   }
-  
+
   .container {
     margin: auto;
     padding: 11px;
   }
-  
+
   nav {
     top: 6%;
     left: 0;
@@ -21,11 +21,11 @@
     width: 100%;
     z-index: 1;
   }
-  
+
   .navLinks {
     display: flex;
   }
-  
+
   .dropdown {
     position: relative;
     display: inline-block;
@@ -36,7 +36,7 @@
     font-size: 22px;
     border: 1px solid white;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -46,18 +46,18 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+
   #logo {
     display: block;
     position: relative;
@@ -71,13 +71,13 @@
     box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 14px;
   }
-  
+
   .logo {
     width: 1800px;
     height: 145px;
     display: block;
   }
-  
+
   .btn {
     height: 25px;
     width: 100%;
@@ -86,7 +86,7 @@
     font-size: 20px;
     border: 1px solid white;
   }
-  
+
   footer {
     flex-basis: auto;
     flex-grow: 0;
@@ -95,7 +95,7 @@
     padding: 5px;
     text-align: center;
   }
-  
+
   a {
     text-decoration: none;
     color: inherit;
@@ -361,7 +361,7 @@
   .container {
     display: none;
   }
-  
+
   .p-menu1 {
     height: 100%;
   }
@@ -371,79 +371,88 @@
     color: inherit;
   }
 
- /* Hamburger */
- .hamburger1 {
-  height: 45px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
+  footer {
+    flex-basis: auto;
+    flex-grow: 0;
+    bottom: 0;
+    flex-shrink: 0;
+    padding: 5px;
+    text-align: center;
+  }
 
-.hamburger1 div {
-  background-color: rgb(255, 255, 255);
-  position: relative;
-  width: 40px;
-  height: 5px;
-  margin-top: 7px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+  /* Hamburger */
+  .hamburger1 {
+    height: 45px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
-#toggle1 {
-  display: none;
-}
+  .hamburger1 div {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
 
-#toggle1:checked + .hamburger1 .top {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  margin-top: 22.5px;
-}
+  #toggle1 {
+    display: none;
+  }
 
-#toggle1:checked + .hamburger1 .meat {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin-top: -5px;
-}
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
 
-#toggle1:checked + .hamburger1 .bottom {
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px;
+  }
 
-#toggle1:checked ~ .menu1 {
-  height: 205px;
-  width: 30%;
-  margin-top: 65px;
-}
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
 
-/* Menu */
-.menu1 {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.4s ease;
-  z-index: 120;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
+  #toggle1:checked ~ .menu1 {
+    height: 205px;
+    width: 30%;
+    margin-top: 65px;
+  }
 
-.link1 {
-  display: block;
-  width: 100%;
-  margin-top: 15px;
-  text-align: center;
-  padding: 0;
-  font-size: 20px;
-}
+  /* Menu */
+  .menu1 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
 
-.link1:hover {
-  background-color: #fff;
-  color: rgb(61, 61, 61);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
+  .link1 {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
 
   /* ABOUT US PAGE BEGINS HERE */
 
@@ -460,7 +469,6 @@
     justify-content: space-around;
     border-radius: 15px;
   }
-
 
   .rightSide {
     display: flex;

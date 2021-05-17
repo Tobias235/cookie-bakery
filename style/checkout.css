@@ -264,6 +264,10 @@ a {
   .customerInformation {
     font-weight: bold;
   }
+  
+  .shippingTitle {
+    font-weight: bold;
+  }
 
   .customerContainer {
     border: 2px solid black;
@@ -304,6 +308,13 @@ a {
 
   .customerTitles {
     margin-bottom: 20px;
+  }
+
+  .orderConfRight {
+    float: right;
+    width: 45%;
+    height: 100%;
+    margin-top: 80px;
   }
 
   .customerSummary {
@@ -384,6 +395,7 @@ a {
     padding-right: 5px;
     padding-left: 5px;
     font-weight: bold;
+    cursor: pointer;
   }
   .checkoutOrder i {
     margin-top: 2px;
@@ -450,9 +462,11 @@ a {
   }
 
   .returnBtn {
-    margin-top: 30px;
-    margin-left: 20px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
     font-size: 15px;
+    cursor: pointer;
   }
 
   /* RIGHT SIDE OF CUSTOMER INFORMATION*/
@@ -1154,7 +1168,7 @@ a {
 .cartIcon {
   margin: 10px;
   position: fixed;
-  left: 90%;
+  left: 9%;
   z-index: 2;
 }
 
@@ -1501,12 +1515,14 @@ a {
     margin-top: 45px;
     margin-left: 10px;
     font-size: 14px;
+    cursor: pointer;
   }
 
   .returnInfo {
     margin-top: 55px;
     margin-left: 5px;
     font-size: 12px;
+    cursor: pointer;
   }
 
   /* PAYMENT AND SHIPPING PAGE ENDS */

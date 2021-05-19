@@ -12,62 +12,11 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" type="text/css" href="../style/checkout.css" />
+    <link rel="stylesheet" type="text/css" href="../style/headerFooter.css" />
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <div class="navLinks">
-          <a href="home.html" class="btn homeBtns">HOME</a>
-          <a href="about.html" class="btn aboutBtns">ABOUT</a>
-          <a href="contact.html" class="btn contactBtns">CONTACT</a>
-
-          <div class="backgroundLogo"></div>
-          <div class="logo">
-            <object
-              data="../pictures/svgLogo.svg"
-              id="logo"
-              class="homeBtns"
-              type="image/svg+xml"
-            ></object>
-          </div>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Products</a>
-            <div class="dropdown-content">
-              <a href="cakes.html" class="cakesBtns" href="#">CAKES</a>
-              <a href="cookies.html" class="cookiesBtns" href="#">COOKIES</a>
-            </div>
-          </li>
-          <a id="searchBtn" class="btn">SEARCH</a>
-          <a href="cart.html" id="cartBtn" class="btn">CART</a>
-        </div>
-      </div>
-    </nav>
-
-     <!-- HAMBURGER  -->
- <section class="p-menu1">
-  <div class="cartIcon">
-     <a href="cart.html" class="cartLink"><i class="fas fa-shopping-cart fa-lg"></i></a>
-  </div>
-  <nav id="navbar" class="navigation" role="navigation">
-      <input id="toggle1" type="checkbox" />
-      <label class="hamburger1" for="toggle1">
-          <div class="top"></div>
-          <div class="meat"></div>
-          <div class="bottom"></div>
-      </label>
-
-      <nav class="menu1">
-          <a href="home.html"class="link1 homeBtns">HOME</a>
-          <a href="about.html" class="link1 aboutBtns">ABOUT</a>
-          <a href="contact.html" class="link1 contactBtns">CONTACT</a>
-          <a href="cakes.html" class="link1 cakesBtns">CAKES</a>
-          <a href="cookies.html" class="link1 cookiesBtns">COOKIES</a>
-      </nav>
-  </nav>
-  <div class="logo">
-      <object data="../pictures/svgLogo.svg" id="logo" type="image/svg+xml"></object>
-  </div>
-</section>
 
     <div class="orderConfBackground">
       <div class="orderSummaryMedia">
@@ -78,14 +27,15 @@
             <i class="fas fa-angle-down"></i>
           </div>
           <div class="orderRight">
-            <p class="productPrice">₱99</p>
+            <p class="summaryPrice">₱99</p>
           </div>
         </div>
       </div>
 
       <div class="orderConfLeft">
+        <div class="centeredBoxes">
         <div class="orderConfText">
-          <h1 id="customerTitle">
+          <h1 class="orderConfTitle">
             Thank you Tobias. Your order #1234 is now confirmed
           </h1>
           <p class="orderConf">
@@ -94,7 +44,7 @@
         </div>
 
         <div class="orderUpdate">
-          <h1 id="orderUpdateTitle">Order Updates</h1>
+          <h1 class="orderConfTitle">Order Updates</h1>
           <p class="orderConf">
             You'll get shipping and delivery updates by email
           </p>
@@ -104,21 +54,21 @@
           <div class="customerLeft">
             <div class="customerTitles">
               <div class="customerInfoTitle">
-                <h1 id="customerInformationTitle">Customer Information</h1>
+                <h1 class="orderConfTitle CustInfoContainer">Customer Information</h1>
               </div>
               <p class="customerInformation">Contact Information</p>
-              <p>123456@gmail.com</p>
+              <p>123456789@gmail.com</p>
             </div>
 
             <div>
               <p class="customerInformation">Shipping Address</p>
               <p>Test Test</p>
-              <p>23534 Sweden Gothenburg</p>
-              <p>2414 GothenBurg</p>
+              <p>23534 Sweden</p>
+              <p>2414 Gothenburg</p>
               <p>Sweden</p>
               <p>+12 3456 4634</p>
               <div class="shipMethod">
-                <p class="shippingTitle">Shipping Method</p>
+                <p class="customerInformation">Shipping Method</p>
                 <p>Standard Delivery - Free</p>
               </div>
             </div>
@@ -128,54 +78,53 @@
             <div class="customerTitles">
               <p class="customerInformation">Payment Method</p>
               <p>Cash on Delivery (COD)</p>
-            </div>
 
             <p class="customerInformation">Billing Address</p>
             <p>Test Test</p>
-            <p>Your ADress Here</p>
+            <p>Your Address Here</p>
             <p>23423 Gothenburg</p>
             <p>Sweden</p>
             <p>+12 3453 3425</p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="orderConfRight">
+      <div class="orderSummaryRight">
         <div class="orderSummary">
           <div class="orderLeft">
-            <img src="../pictures/productPic.jpg" class="productPic" />
-            <p class="productText">Chocolate Caramel</p>
+            <img src="../pictures/productPic.jpg" class="summaryPic" />
+            <p class="summaryText">Chocolate Caramel</p>
           </div>
           <div class="orderRight">
-            <p class="productPrice">₱99</p>
+            <p class="summaryPrice">₱99</p>
           </div>
         </div>
-        <div class="borderBottom"></div>
+        <div class="orderSummaryBorder"></div>
         <div class="orderSummaryColumn">
           <div class="orderLeftColumn">
             <p>Subtotal</p>
             <p>Shipping</p>
           </div>
           <div class="orderRight">
-            <p class="productPrice">₱99</p>
-            <p class="productPrice">Calculated at next step</p>
+            <p class="summaryPrice">₱99</p>
+            <p class="summaryPrice">Calculated at next step</p>
           </div>
         </div>
-        <div class="borderBottom"></div>
+        <div class="orderSummaryBorder"></div>
 
         <div class="orderSummary">
           <div class="orderLeft">
-            <p class="productTotal">Total</p>
+            <p class="summaryTotal">Total</p>
           </div>
           <div class="orderRight">
-            <p class="productPrice">₱99</p>
+            <p class="summaryPrice">₱99</p>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="footer">
-      <a href="https://www.vecteezy.com/free-vector/logo">Logo by Vecteezy</a>
-    </footer>
+    <script src="../script/header.js"></script>
   </body>
 </html>

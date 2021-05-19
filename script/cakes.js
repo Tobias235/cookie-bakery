@@ -1,4 +1,4 @@
-const addToCartButtons = document.querySelectorAll(".productBtn");
+const addToCartButtons = document.querySelectorAll(".addToCart");
 //Get data from localstorage if there is anything inside
 const products = JSON.parse(localStorage.getItem("items")) || [];
 
@@ -17,7 +17,7 @@ function setItems(e) {
   // console.log(title);
   const price = productContainer.querySelectorAll(".productPrice")[0].innerText;
   // console.log(price);
-  const size = productContainer.querySelectorAll(".productSelect")[0].value;
+  const size = productContainer.querySelectorAll(".cakeSelect")[0].value;
   // console.log(size);
   const image = productContainer.querySelectorAll(".productPic")[0].src;
   // console.log(image);

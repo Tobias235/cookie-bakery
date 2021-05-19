@@ -38,7 +38,7 @@ for (let i = 0; i < decrementButton.length; i++) {
 }
 
 // ADD TO CART FUNCTIONALITY
-const addToCartButtons = document.querySelectorAll(".cartBtn");
+const addToCartButtons = document.querySelectorAll(".addToCart");
 //Get data from localstorage if there is anything inside
 const products = JSON.parse(localStorage.getItem("items")) || [];
 
@@ -57,7 +57,7 @@ function setItems(e) {
   // console.log(title);
   const price = productContainer.querySelectorAll(".productPrice")[0].innerText;
   // console.log(price);
-  const quantity = productContainer.querySelectorAll(".productSelect")[0].value;
+  const quantity = productContainer.querySelectorAll(".cookieAmount")[0].value;
   // console.log(size);
   const image = productContainer.querySelectorAll(".productPic")[0].src;
   // console.log(image);

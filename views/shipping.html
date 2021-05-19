@@ -12,64 +12,13 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" type="text/css" href="../style/main.css" />
+    <link rel="stylesheet" type="text/css" href="../style/headerFooter.css" />
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <div class="navLinks">
-          <a href="home.html" class="btn homeBtns">HOME</a>
-          <a href="about.html" class="btn aboutBtns">ABOUT</a>
-          <a href="contact.html" class="btn contactBtns">CONTACT</a>
 
-          <div class="backgroundLogo"></div>
-          <div class="logo">
-            <object
-              data="../pictures/svgLogo.svg"
-              id="logo"
-              class="homeBtns"
-              type="image/svg+xml"
-            ></object>
-          </div>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Products</a>
-            <div class="dropdown-content">
-              <a href="cakes.html" class="cakesBtns" href="#">CAKES</a>
-              <a href="cookies.html" class="cookiesBtns" href="#">COOKIES</a>
-            </div>
-          </li>
-          <a id="searchBtn" class="btn">SEARCH</a>
-          <a href="cart.html" id="cartBtn" class="btn">CART</a>
-        </div>
-      </div>
-    </nav>
-
- <!-- HAMBURGER  -->
- <section class="p-menu1">
-  <div class="cartIcon">
-     <a href="cart.html" class="cartLink"><i class="fas fa-shopping-cart fa-lg"></i></a>
-  </div>
-  <nav id="navbar" class="navigation" role="navigation">
-      <input id="toggle1" type="checkbox" />
-      <label class="hamburger1" for="toggle1">
-          <div class="top"></div>
-          <div class="meat"></div>
-          <div class="bottom"></div>
-      </label>
-
-      <nav class="menu1">
-          <a href="home.html"class="link1 homeBtns">HOME</a>
-          <a href="about.html" class="link1 aboutBtns">ABOUT</a>
-          <a href="contact.html" class="link1 contactBtns">CONTACT</a>
-          <a href="cakes.html" class="link1 cakesBtns">CAKES</a>
-          <a href="cookies.html" class="link1 cookiesBtns">COOKIES</a>
-      </nav>
-  </nav>
-  <div class="logo">
-      <object data="../pictures/svgLogo.svg" id="logo" type="image/svg+xml"></object>
-  </div>
-</section>
-
-    <div class="custInfoBackground">
+    <div class="shippingBackground">
       <div class="orderSummaryMedia">
         <div class="mediaSummaryCenter">
           <div class="showOrder">
@@ -78,12 +27,12 @@
             <i class="fas fa-angle-down"></i>
           </div>
           <div class="orderRight">
-            <p class="productPrice">₱99</p>
+            <p class="summaryPrice">₱99</p>
           </div>
         </div>
       </div>
 
-      <div class="custInfoLeft">
+      <div class="shippingLeft">
         <div class="checkoutOrder">
           <a href="cart.html">Cart </a>
           <i class="fas fa-chevron-right fa-sm"></i>
@@ -94,44 +43,44 @@
           <a href="payment.html">Payment</a>
         </div>
 
-        <div class="customerInfo">
+      <div class="shippingCentered">
+        <div class="shippingCustInfo">
           <div>
-            <div class="infoBox">
+            <div class="shippingBox">
               <p class="shippingInfo">Contact</p>
               <p>123456@gmail.com</p>
-              <a class="changeLink">Change</a>
+              <a class="shippingChangeLink">Change</a>
             </div>
-            <div class="borderBottomSub"></div>
-            <div class="infoBox">
+            <div class="shippingBorder"></div>
+            <div class="shippingBox">
               <p class="shippingInfo">Ship To</p>
               <p class="shipToAddress">Your Adress is Shown Here</p>
-              <a class="changeLink">Change</a>
+              <a class="shippingChangeLink">Change</a>
             </div>
           </div>
         </div>
 
-        <div class="shippingMethod">
-          <h1>Shipping Method</h1>
+          <h1 class="shippingHeader">Shipping Method</h1>
 
           <div class="deliveryOptions">
             <div>
-              <div class="infoBox">
-                <label class="deliveryText"
+              <div class="shippingBox">
+                <label class="shippingText"
                   ><input type="checkbox" /> Standard Delivery</label
                 >
                 <p>Free</p>
               </div>
-              <div class="borderBottomSub"></div>
-              <div class="infoBox">
-                <label class="deliveryText"
+              <div class="shippingBorder"></div>
+              <div class="shippingBox">
+                <label class="shippingText"
                   ><input type="checkbox" /> Express Delivery</label
                 >
                 <p>50PHP</p>
               </div>
-            </div>
           </div>
+        </div>
 
-          <div class="contactBtns">
+          <div class="shippingBtns">
             <button class="shipmentBtn">
               <a href="payment.html">Continue to Payment</a>
             </button>
@@ -140,42 +89,40 @@
         </div>
       </div>
 
-      <div class="custInfoRight">
+      <div class="orderSummaryRight">
         <div class="orderSummary">
           <div class="orderLeft">
-            <img src="../pictures/productPic.jpg" class="productPic" />
-            <p class="productText">Chocolate Caramel</p>
+            <img src="../pictures/productPic.jpg" class="summaryPic" />
+            <p class="summaryText">Chocolate Caramel</p>
           </div>
           <div class="orderRight">
-            <p class="productPrice">₱99</p>
+            <p class="summaryPrice">₱99</p>
           </div>
         </div>
-        <div class="borderBottom"></div>
+        <div class="orderSummaryBorder"></div>
         <div class="orderSummaryColumn">
           <div class="orderLeftColumn">
             <p>Subtotal</p>
             <p>Shipping</p>
           </div>
           <div class="orderRight">
-            <p class="productPrice">₱99</p>
-            <p class="productPrice">Calculated at next step</p>
+            <p class="summaryPrice">₱99</p>
+            <p class="summaryPrice">Calculated at next step</p>
           </div>
         </div>
-        <div class="borderBottom"></div>
+        <div class="orderSummaryBorder"></div>
 
         <div class="orderSummary">
           <div class="orderLeft">
-            <p class="productTotal">Total</p>
+            <p class="summaryTotal">Total</p>
           </div>
           <div class="orderRight">
-            <p class="productPrice">₱99</p>
+            <p class="summaryPrice">₱99</p>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="footer">
-      <a href="https://www.vecteezy.com/free-vector/logo">Logo by Vecteezy</a>
-    </footer>
+    <script src="../script/header.js"></script>
   </body>
 </html>

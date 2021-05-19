@@ -15,7 +15,8 @@ function displayCart() {
     //conditional statement to check if item.quantity or item.size is true
     //create the HTML
     Object.values(cartItems).map((item) => {
-      productContainer.innerHTML += `<div class="fullContainer">
+      productContainer.innerHTML += `
+                      <div class="fullContainer">
                         <div class="leftCart">
                             <div class="product">
                                 <img src="${item.image}" class="cartImg">
@@ -33,10 +34,10 @@ function displayCart() {
                                   if (item.quantity) {
                                     return (productContainer.innerHTML = `
                                       <button class="quantityBtn dec">-</button>
-                                      <input type="number" class="productSelect" value="${item.quantity}">
+                                      <input type="number" class="productAmount" value="${item.quantity}">
                                       <button class="quantityBtn inc">+</button>`);
                                   } else if (item.size) {
-                                    return (productContainer.innerHTML = `<p class="cakeSelect">${item.size}</p>`);
+                                    return (productContainer.innerHTML = `<p class="cakeSize">${item.size}</p>`);
                                   }
                                 })()}
                                     <a class="deleteBtn">Remove</a>
@@ -60,7 +61,7 @@ function displayCart() {
 
     productContainer.innerHTML += `
                 <div class="amount">
-                    <p class="subTotal">Subtotal: ₱${cart}</p>
+                    <h1 class="subTotal">Subtotal: ₱${cart}</h1>
                     <a class="checkoutBtn">Check Out</a>
                 </div>`;
 

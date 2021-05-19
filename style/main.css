@@ -1,134 +1,124 @@
 @media screen and (min-width: 770px) {
-  /* BACKGROUND AND NAVBAR */
-  html {
-    height: 100%;
-    background-image: url(../pictures/indexBackground1.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-  }
+    /* 
+    **********************
+    ----------------------
+    INDEX PAGE BEGINS HERE
+    ----------------------
+    **********************
+    */
+    .slide-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin: 12.5em auto;
+        max-width: 750px;
+        height: 600px;
+        justify-content: space-around;
+        overflow: hidden;
+        border-bottom: 5px solid black;
+      }
+    
+      #slides {
+        width: 100%;
+        height: 600px;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        border: 5px solid black;
+      }
+    
+      .slide {
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 1;
+    
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+      }
+    
+      .showing {
+        display: block;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+      .slide-container #prev,
+      .slide-container #next {
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: all 0.6s ease;
+        user-select: none;
+      }
+    
+      .slide-container #prev {
+        left: -22%;
+        float: left;
+      }
+    
+      .slide-container #next {
+        right: -22%;
+      }
+    
+      .slide:nth-of-type(1) {
+        background-image: url("https://images.unsplash.com/photo-1582659042116-63f96b514135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+      }
+      .slide:nth-of-type(2) {
+        background-image: url("https://images.unsplash.com/photo-1566217225167-ea65c6ccabb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+      }
+      .slide:nth-of-type(3) {
+        background-image: url("https://images.unsplash.com/photo-1499889808931-317a0255c0e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+      }
+      .slide:nth-of-type(4) {
+        background-image: url("https://images.unsplash.com/photo-1559490882-9f907ae78499?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80");
+      }
+      .slide:nth-of-type(5) {
+        background-image: url("https://images.unsplash.com/photo-1572095755818-8fd546d228a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80");
+      }
 
-  .container {
-    margin: auto;
-    padding: 11px;
-  }
+    /* 
+    **********************
+    ----------------------
+    INDEX PAGE ENDS HERE
+    ----------------------
+    **********************
+    */
 
-  nav {
-    top: 6%;
-    left: 0;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.4);
-    height: 50px;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .navLinks {
+    /* 
+    **********************
+    ----------------------
+    ABOUT PAGE BEGINS HERE
+    ----------------------
+    **********************
+    */   
+  .aboutBackground {
     display: flex;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    height: 25px;
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    border: 1px solid white;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #f9f9f9;
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  #logo {
-    display: block;
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 240px;
-    min-width: 150px;
-    align-items: center;
-    background: rgb(167, 95, 74);
-    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 14px;
-  }
-
-  .logo {
-    width: 1800px;
-    height: 145px;
-    display: block;
-  }
-
-  .btn {
-    height: 25px;
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    border: 1px solid white;
-  }
-
-  footer {
-    flex-basis: auto;
-    flex-grow: 0;
-    bottom: 0;
-    flex-shrink: 0;
-    padding: 5px;
-    text-align: center;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  .p-menu1 {
-    display: none;
-  }
-
-  /* ABOUT US PAGE */
-
-  .productBackground {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
     background: rgba(255, 255, 255, 0.7);
-    margin-top: 0;
     margin: 12em auto;
     padding: 0.75em 0.75em 0;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     width: 90%;
-    height: auto;
-    justify-content: space-around;
     border-radius: 15px;
   }
 
   .rightSide {
     float: right;
-    display: block;
     width: 40%;
     text-align: center;
     margin-top: 15px;
     margin-right: 25px;
     margin-bottom: 15px;
-    word-wrap: break-word;
   }
 
   .middle {
@@ -138,7 +128,6 @@
 
   .leftSide {
     float: left;
-    display: block;
     width: 40%;
     margin-top: 15px;
     margin-left: 25px;
@@ -153,551 +142,957 @@
     margin: 10px;
   }
 
-  p {
-    margin: 0;
-  }
+    /* 
+    **********************
+    ----------------------
+    ABOUT PAGE ENDS HERE
+    ----------------------
+    **********************
+    */
 
-  /* CONTACT PAGE BEGINS */
+    /* 
+    **********************
+    ----------------------
+    CONTACT PAGE BEGINS HERE
+    ----------------------
+    **********************
+    */
+    
+    .contactBackground {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background: rgba(255, 255, 255, 0.7);
+      margin: 12em auto;
+      padding: 10px 10px 22px;
+      width: 50%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+      border: 2px solid black;
+    }
+  
+    .contactImg {
+      display: flex;
+      width: 100%;
+      height: 450px;
+      margin: 0;
+    }
+  
+    .topofJumbo div {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contactTextTop {
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+    }
 
-  .contactBackground {
-    display: flex;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.7);
-    margin-top: 0;
-    margin: 12em auto;
-    padding: 0.75em 0.75em 0;
-    padding-bottom: 70px;
-    width: 45%;
-    height: 640px;
-    min-width: 520px;
-    border-radius: 15px;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-around;
-  }
+    .contactTextTop p {
+      margin: 2px;
+    }
+  
+    .contactBox {
+      width: 45%;
+      margin-top: 20px;
+      box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+      border: 2px solid black;
+      padding-bottom: 15px;
+    }
+  
+    .questionText {
+      margin-bottom: 10px;
+    }
+  
+    .inputForm input {
+      margin-bottom: 10px;
+      width: 90%;
+      height: 30px;
+    }
+  
+    .inputForm textarea {
+      height: 100px;
+      width: 90%;
+      font-family: arial;
+    }
+  
+    .inputForm {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      margin-left: 20px;
+    }
+  
+    .centerBtn {
+      margin-top: 7px;
+      margin-right: 25px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contactBtn {
+      height: 25px;
+      width: 100px;
+      color: black;
+      background-color: rgba(5, 5, 5, 0.2);
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      border: 1px solid black;
+    }
 
-  .topofJumbo {
-    float: top;
-    height: 54%;
-    width: 100%;
-  }
+    .contactHeader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .faqHeader {
+      font-size: 23px;
+      margin-top: 15px;
+    }
 
-  .contactImg {
-    display: flex;
-    width: 100%;
-    height: 350px;
-    margin: 0;
-  }
+    .faq p {
+      margin: 0;
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
 
-  .topofJumbo div {
-    display: flex;
-    justify-content: center;
-  }
+    /* 
+    **********************
+    ----------------------
+    CONTACT PAGE ENDS HERE
+    ----------------------
+    **********************
+    */
 
-  .contactTextTop {
-    font-weight: bold;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    /* 
+    ****************************************
+    -----------------------------------------
+    CAKES & COOKIES PRODUCT PAGE BEGINS HERE
+    -----------------------------------------
+    ****************************************
+    */
 
-  .leftContactJumbo {
-    float: left;
-    height: 46%;
-    width: 45%;
-    display: flex;
-    margin-top: 20px;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-    padding-bottom: 25px;
-  }
+    .productBackground {
+      display: flex;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.7);
+      margin: 12em auto;
+      padding: 15px 15px 0;
+      padding-bottom: 55px;
+      width: 90%;
+      justify-content: space-around;
+      border-radius: 15px;
+    }
 
-  .questionText {
-    margin-bottom: 10px;
-  }
+    .title {
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .titleText {
+      text-align: center;
+      font-size: 54px;
+      margin: 0;
+      margin-bottom: 10px;
+      color: rgb(28, 27, 23);
+    }
+    
+    .titleBorder {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .productContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 300px;
+      text-align: center;
+      margin: 15px;
+    }
+    
+    .productPic {
+      width: 100%;
+      border-radius: 15px;
+    }
+    
+    .productText {
+      margin: 0;
+      margin-top: 2px;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    
+    .cakeSelect {
+      height: 30px;
+      width: 105px;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
 
-  .inputForm input {
-    margin-bottom: 10px;
-    width: 90%;
-    height: 30px;
-  }
+    .addToCart {
+      height: 30px;
+      width: 95%;
+      color: black;
+      font-size: 24px;
+      border: 1px solid black;
+      margin-left: 5px;
+      margin-top: 15px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+    }
+    
+    /* COOKIE PAGE BUTTONS*/
 
-  .inputForm textarea {
-    height: 100px;
-    width: 90%;
-    font-family: arial;
-  }
+    .cookieAmount {
+      height: 30px;
+      width: 105px;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      text-align: center;
+      border: 1px solid black;
+      padding: 0;
+      align-items: center;
+      border-radius: 5px;
+    }
 
-  .inputForm {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
+    .quantityBtn {
+      display: inline-block;
+      font-size: 20px;
+      height: 30px;
+      width: 30px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid black;
+      border-radius: 5px;
+    }
 
-  .centerBtn {
-    margin-top: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    /* 
+    *****************************************
+    -----------------------------------------
+    CAKES & COOKIES PRODUCT PAGE ENDS HERE
+    -----------------------------------------
+     ****************************************
+    */
 
-  .contactBtn {
-    height: 25px;
-    width: 100px;
-    color: black;
-    background-color: rgba(5, 5, 5, 0.1);
-    text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    border: 1px solid black;
-  }
+        /* 
+    *********************
+    ---------------------
+    CART PAGE BEGINS HERE
+    ---------------------
+     ********************
+    */
+    .background {
+      display: flex;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.7);
+      margin: 12em auto;
+      padding: 10px 10px 30px;
+      width: 55%;
+      border-radius: 15px;
+    }
+  
+    .cartHeader {
+      text-align: center;
+      width: 100%;
+      border-bottom: 2px solid gray;
+    }
+  
+    .topOfCart {
+      display: flex;
+      width: 100%;
+      height: 55px;
+      border-bottom: 4px solid black;
+    }
+  
+    .leftSide {
+      display: flex;
+      width: 60%;
+    }
+  
+    .rightSide {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 68%;
+    }
+  
+    .fullProductsContainer {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .fullContainer {
+      height: 40%;
+      padding-bottom: 40px;
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 0px;
+      background-color: rgba(150, 150, 150, 0.4);
+    }
+  
+    .leftCart {
+      float: left;
+      width: 35%;
+      margin-top: 10px;
+    }
+  
+    .product {
+      display: flex;
+    }
 
-  .rightContactJumbo {
-    float: right;
-    height: 46%;
-    width: 45%;
-    margin-top: 20px;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-    padding-bottom: 25px;
-  }
+    .cartImg {
+      max-width: 50%;
+      margin-left: 10px;
+      margin-right: 7px;
+    }
 
-  .rightContactJumbo :first-child {
-    width: 100%;
-  }
+    .rightCart {
+      float: right;
+      width: 54%;
+      margin-top: 10px;
+    }
+  
+    .productRight {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .price {
+      margin-left: 12px;
+    }
+  
+    .totalRight {
+      margin-right: 37px;
+    }
+  
+    .cakeSize {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 50px;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+  
+    .deleteBtn {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  
+    .amount {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .subTotal {
+      display: flex;
+      font-size: 25px;
+    }
+  
+    .checkoutBtn {
+      height: 25px;
+      width: 145px;
+      color: black;
+      text-align: center;
+      font-size: 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-  .faq {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-  }
 
-  .contactHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+    /* COOKIE AMOUNT AND QUANTITY*/
 
-  .faqHeader {
-    font-size: 23px;
-    margin-top: 15px;
-  }
+    .productAmount {
+      height: 30px;
+      width: 50px;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      text-align: right;
+      border: 1px solid black;
+      padding: 0;
+      margin-top: 10px;
+      align-items: center;
+      border-radius: 5px;
+    }
 
-  .faq li {
-    margin-left: 10px;
+    .quantityBtn {
+      display: inline-block;
+      font-size: 20px;
+      height: 30px;
+      width: 30px;
+      margin-top: 10px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* 
+    *******************
+    -------------------
+    CART PAGE ENDS HERE
+    -------------------
+     ******************
+    */
   }
-  .faq p {
-    margin-left: 15px;
-    margin-bottom: 10px;
-  }
-
-  /* POLICY PAGES BEGINS */
-
-  .policyBackground {
-    display: flex;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.7);
-    margin-top: 0;
-    margin: 12em auto;
-    padding: 0.75em 0.75em 0;
-    padding-bottom: 70px;
-    width: 70%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-  }
-  .textContainer h1 {
-    text-align: center;
-  }
-
-  .policyText {
-    margin: 30px;
-  }
-  /* POLICY PAGES ENDS */
-}
-
-/* MOBILE SIZE PAGE BEGINS HERE */
 
 @media screen and (max-width: 769px) {
-  html {
-    height: 100%;
-    background-image: url(../pictures/indexBackground1.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-  }
+    /* 
+    **********************
+    ----------------------
+    INDEX PAGE BEGINS HERE
+    ----------------------
+    **********************
+    */
 
-  .logo {
-    width: 100px;
-    height: 145px;
-    display: block;
-  }
+    .slide-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin: 5em auto;
+        max-width: 450px;
+        height: 450px;
+        justify-content: space-around;
+        overflow: hidden;
+      }
+    
+      #slides {
+        width: 100%;
+        height: 285px;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        border: 5px solid black;
+      }
+    
+      .slide {
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 1;
+    
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+      }
+    
+      .showing {
+        display: block;
+        z-index: 2;
+      }
+    
+      .slide-container #prev,
+      .slide-container #next {
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: all 0.6s ease;
+        user-select: none;
+      }
+    
+      .slide-container #prev {
+        left: -22%;
+        float: left;
+      }
+    
+      .slide-container #next {
+        right: -22%;
+      }
+    
+      .slide:nth-of-type(1) {
+        background-image: url("https://images.unsplash.com/photo-1582659042116-63f96b514135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .slide:nth-of-type(2) {
+        background-image: url("https://images.unsplash.com/photo-1566217225167-ea65c6ccabb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .slide:nth-of-type(3) {
+        background-image: url("https://images.unsplash.com/photo-1499889808931-317a0255c0e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .slide:nth-of-type(4) {
+        background-image: url("https://images.unsplash.com/photo-1559490882-9f907ae78499?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .slide:nth-of-type(5) {
+        background-image: url("https://images.unsplash.com/photo-1572095755818-8fd546d228a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
 
-  #logo {
-    position: fixed;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 170px;
-    min-width: 150px;
-    background: rgb(167, 95, 74);
-    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    z-index: 1;
-  }
+     /* 
+    **********************
+    ----------------------
+    INDEX PAGE ENDS HERE
+    ----------------------
+    **********************
+    */
 
-  nav {
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.4);
-    height: 65px;
-    width: 100%;
-  }
+    
 
-  .container {
-    display: none;
-  }
+    /* 
+    **********************
+    ----------------------
+    ABOUT PAGE BEGINS HERE
+    ----------------------
+    **********************
+    */
 
-  .p-menu1 {
-    height: 100%;
-  }
+    .aboutBackground {
+      display: flex;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.7);
+      margin: 8em auto;
+      padding: 0.5em 0.5em 0;
+      padding-bottom: 10px;
+      width: 85%;
+      border-radius: 15px;
+    }
+  
+    .aboutMobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+      border: 2px solid black;
+      margin: 10px;
+    }
+  
+    .aboutText {
+      margin: 10px;
+    }
+  
+    .aboutImg {
+      max-width: 60%;
+      height: auto;
+      margin: 10px;
+      border: 3px solid black;
+    }
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+    /* 
+    **********************
+    ----------------------
+    ABOUT PAGE ENDS HERE
+    ----------------------
+    **********************
+    */
 
-  footer {
-    flex-basis: auto;
-    flex-grow: 0;
-    bottom: 0;
-    flex-shrink: 0;
-    padding: 5px;
-    text-align: center;
-  }
+    /* 
+    **********************
+    ----------------------
+    CONTACT PAGE BEGINS HERE
+    ----------------------
+    **********************
+    */
 
-  /* Hamburger */
-  .hamburger1 {
-    height: 45px;
-    width: 80%;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-  }
+    .contactBackground {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+      margin: 8em auto;
+      padding: 5px 5px 25px;
+      width: 80%;
+      border-radius: 15px;
+      border: 2px solid black;
+    }
 
-  .hamburger1 div {
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    width: 40px;
-    height: 5px;
-    margin-top: 7px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
+    .contactBox {
+      width: 85%;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
+      border: 2px solid black;
+      padding-bottom: 15px;
+    }
 
-  #toggle1 {
-    display: none;
-  }
+    .contactImg {
+      display: flex;
+      width: 100%;
+    }
+  
+    .topofJumbo div {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contactTextTop {
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+      text-shadow: 2px 2px gray;
+    }
 
-  #toggle1:checked + .hamburger1 .top {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    margin-top: 22.5px;
-  }
+    .contactTextTop p {
+      margin: 0;
+      margin-top: 3px;
+    }
+  
+    .questionText {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  
+    .inputForm input {
+      margin-bottom: 10px;
+      width: 90%;
+      height: 20px;
+      font-size: 11px;
+    }
+  
+    .inputForm textarea {
+      height: 70px;
+      width: 90.4%;
+      font-family: arial;
+      font-size: 11px;
+    }
+  
+    .inputForm {
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+  
+    .centerBtn {
+      margin-top: 5px;
+      margin-right: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .contactBtn {
+      height: 25px;
+      width: 80px;
+      color: black;
+      background-color: rgba(5, 5, 5, 0.2);
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      border: 1px solid black;
+    }
+  
+    .faqCenter {
+      width: 100%;
+    }
+  
+    .faqHeader {
+      font-size: 23px;
+      margin-top: 15px;
+      text-align: center;
+    }
 
-  #toggle1:checked + .hamburger1 .meat {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin-top: -5px;
-  }
+    .faq {
+      margin-left: 35px;
+    }
 
-  #toggle1:checked + .hamburger1 .bottom {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
+    .faq p {
+      margin: 0;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
 
-  #toggle1:checked ~ .menu1 {
-    height: 205px;
-    width: 30%;
-    margin-top: 65px;
-  }
+    /* 
+    **********************
+    ----------------------
+    CONTACT PAGE ENDS HERE
+    ----------------------
+    **********************
+    */
 
-  /* Menu */
-  .menu1 {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    height: 0px;
-    overflow: hidden;
-    transition: height 0.4s ease;
-    z-index: 120;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
+     /* 
+    ****************************************
+    -----------------------------------------
+    CAKES & COOKIES PRODUCT PAGE BEGINS HERE
+    -----------------------------------------
+    ****************************************
+    */
 
-  .link1 {
-    display: block;
-    width: 100%;
-    margin-top: 15px;
-    text-align: center;
-    padding: 0;
-    font-size: 20px;
-  }
+    .productBackground {
+      display: flex;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.7);
+      margin: 12em auto;
+      padding: 15px 15px 0;
+      padding-bottom: 55px;
+      width: 83%;
+      justify-content: space-around;
+      border-radius: 15px;
+    }
+    
+    .titleText {
+      text-align: center;
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
 
-  .link1:hover {
-    background-color: #fff;
-    color: rgb(61, 61, 61);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
+    .titlePic {
+      max-width: 100%;
+    }
+    
+    .productContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 160px;
+      text-align: center;
+      margin: 15px;
+    }
+    
+    .productPic {
+      width: 100%;
+      border-radius: 15px;
+    }
+    
+    .productText {
+      margin: 0;
+      margin-top: 2px;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    
+    .cakeSelect {
+      height: 30px;
+      width: 105px;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
 
-  .cartIcon {
-    margin: 10px;
-    position: fixed;
-    left: 90%;
-    z-index: 2;
-  }
+    .addToCart {
+      height: 30px;
+      width: 95%;
+      color: black;
+      font-size: 24px;
+      border: 1px solid black;
+      margin-left: 5px;
+      margin-top: 15px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+    }
+    
+    /* COOKIE PAGE BUTTONS*/
 
-  .fa-shopping-cart {
-    margin-top: 10px;
-    color: white;
-  }
-  /* ABOUT US PAGE BEGINS HERE */
+    .cookieAmount {
+      height: 30px;
+      width: 105px;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      text-align: center;
+      border: 1px solid black;
+      padding: 0;
+      align-items: center;
+      border-radius: 5px;
+    }
 
-  .productBackground {
-    display: flex;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.7);
-    margin-top: 0;
-    margin: 2em auto;
-    padding: 0.75em 0.75em 0;
-    padding-bottom: 40px;
-    width: 90%;
-    height: auto;
-    justify-content: space-around;
-    border-radius: 15px;
-  }
+    .quantityBtn {
+      display: inline-block;
+      font-size: 20px;
+      height: 30px;
+      width: 30px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid black;
+      border-radius: 5px;
+    }
 
-  .rightSide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-    margin: 10px;
-  }
+    /* 
+    *****************************************
+    -----------------------------------------
+    CAKES & COOKIES PRODUCT PAGE ENDS HERE
+    -----------------------------------------
+     ****************************************
+    */
 
-  .leftSide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-    margin: 10px;
-  }
+    /* 
+    *********************
+    ---------------------
+    CART PAGE BEGINS HERE
+    ---------------------
+     ********************
+    */
 
-  .aboutText {
-    display: block;
-    word-wrap: break-word;
-    margin: 10px;
-  }
+    .background {
+      flex-wrap: wrap;
+      display: flex;
+      margin-top: 0;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 10px 10px 15px;
+      margin: 9em auto;
+      width: 85%;
+      border-radius: 15px;
+    }
+  
+  .shoppingCart {
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid gray;
+      font-size: 22px;
+    }
 
-  .aboutImg {
-    max-width: 60%;
-    height: auto;
-    margin: 10px;
-    border: 3px solid black;
-  }
+  
+    .fullProductsContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .fullContainer {
+      width: 100%;
+      padding-bottom: 10px;
+      margin-top: 15px;
+      margin-left: 0;
+      background-color: rgba(150, 150, 150, 0.4);
+    }
 
-  p {
-    margin: 0;
-  }
+    .cartHeader {
+      width: 100%;
+    }
+  
+    .product {
+      height: 100%;
+      display: flex;
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+  
+    .cartImg {
+      display: flex;
+      width: 30%;
+      margin-right: 7px;
+    }
+  
+    .cartBtn {
+      float: left;
+      margin-left: 16px;
+      width: 33%;
+    }
 
-  /* CONTACT PAGE BEGINS  */
+    .deleteBtn {
+      display: flex;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  
+    .cakeSize {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 40px;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+  
+    .totalRight {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10px;
+    }
+  
+    .amount {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .subTotal {
+      font-size: 25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+    .checkoutBtn {
+      height: 25px;
+      width: 145px;
+      color: black;
+      text-align: center;
+      margin-top: 5px;
+      font-size: 20px;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  
+    .price {
+      display: none;
+    }
+  
+    .topOfCart {
+      display: none;
+    }
+    
 
-  .contactBackground {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    margin-top: 0;
-    margin: 2em auto;
-    padding: 0.75em 0.75em 0;
-    padding-bottom: 40px;
-    width: 85%;
-    height: auto;
-    border-radius: 15px;
-    border: 2px solid black;
-  }
+    /* COOKIE AMOUNT AND QUANTITY*/
 
-  .topofJumbo {
-    float: top;
-    height: 54%;
-    width: 100%;
-  }
+    .productAmount {
+      height: 25px;
+      width: 40px;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      text-align: right;
+      border: 1px solid black;
+      padding: 0;
+      margin-top: 10px;
+      align-items: center;
+      border-radius: 5px;
+    }
 
-  .contactImg {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    margin: 0;
-  }
-
-  .topofJumbo div {
-    display: flex;
-    justify-content: center;
-  }
-
-  .contactTextTop {
-    color: black;
-    font-weight: bold;
-    font-size: 17px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-shadow: 2px 2px gray;
-  }
-
-  .contactMiddle {
-    display: block;
-    width: 11.5%;
-  }
-
-  .leftContactJumbo {
-    width: 78%;
-    display: flex;
-    margin-top: 20px;
-    margin-left: 40px;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-    padding-bottom: 25px;
-  }
-
-  .questionText {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-
-  .inputForm input {
-    margin-bottom: 10px;
-    width: 90%;
-    height: 20px;
-    font-size: 11px;
-  }
-
-  .inputForm textarea {
-    height: 70px;
-    width: 90%;
-    font-family: arial;
-    font-size: 11px;
-  }
-
-  .inputForm {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
-
-  .centerBtn {
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contactBtn {
-    height: 25px;
-    width: 80px;
-    color: black;
-    background-color: rgba(5, 5, 5, 0.1);
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    border: 1px solid black;
-    margin-right: 10px;
-  }
-
-  .contactMiddle {
-    width: 10%;
-  }
-
-  .rightContactJumbo {
-    width: 78%;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-  }
-
-  .rightContactJumbo :first-child {
-    width: 100%;
-  }
-
-  .faq {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    font-size: 13px;
-  }
-
-  .contactHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .faqHeader {
-    font-size: 18px;
-    margin-top: 15px;
-  }
-
-  .faq li {
-    margin-bottom: 0px;
-    margin-left: 40px;
-  }
-  .faq p {
-    margin-left: 35px;
-    margin-bottom: 10px;
-  }
-
-  /* POLICY PAGES BEGINS */
-
-  .policyBackground {
-    display: flex;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.7);
-    margin-top: 0;
-    margin: 2em auto;
-    padding: 0.75em 0.75em 0;
-    padding-bottom: 70px;
-    width: 70%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: inset 0 0 0 5px rgba(5, 5, 5, 0.4);
-    border: 2px solid black;
-  }
-  .textContainer h1 {
-    text-align: center;
-  }
-
-  .policyText {
-    margin: 30px;
-  }
-  /* POLICY PAGES ENDS */
+    .quantityBtn {
+      font-size: 18px;
+      height: 25px;
+      width: 25px;
+      border: none;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid black;
+      padding: 0;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* 
+    *******************
+    -------------------
+    CART PAGE ENDS HERE
+    -------------------
+     ******************
+    */
 }

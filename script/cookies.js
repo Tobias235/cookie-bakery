@@ -38,7 +38,7 @@ for (let i = 0; i < decrementButton.length; i++) {
 }
 
 // ADD TO CART FUNCTIONALITY
-const addToCartButtons = document.querySelectorAll(".addToCart");
+const addToCartButtons = document.querySelectorAll(".addToCartBtn");
 //Get data from localstorage if there is anything inside
 const products = JSON.parse(localStorage.getItem("items")) || [];
 

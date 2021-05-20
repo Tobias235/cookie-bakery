@@ -338,7 +338,7 @@
       border: 1px solid black;
     }
 
-    .addToCart {
+    .addToCartBtn {
       height: 30px;
       width: 95%;
       color: black;
@@ -364,7 +364,7 @@
       border-radius: 5px;
     }
 
-    .quantityBtn {
+    .qtyBtn {
       display: inline-block;
       font-size: 20px;
       height: 30px;
@@ -626,28 +626,18 @@
     
       .slide:nth-of-type(1) {
         background-image: url("https://images.unsplash.com/photo-1582659042116-63f96b514135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-        background-size: 100%;
-        background-repeat: no-repeat;
       }
       .slide:nth-of-type(2) {
         background-image: url("https://images.unsplash.com/photo-1566217225167-ea65c6ccabb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
-        background-size: 100%;
-        background-repeat: no-repeat;
       }
       .slide:nth-of-type(3) {
         background-image: url("https://images.unsplash.com/photo-1499889808931-317a0255c0e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-        background-size: 100%;
-        background-repeat: no-repeat;
       }
       .slide:nth-of-type(4) {
         background-image: url("https://images.unsplash.com/photo-1559490882-9f907ae78499?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80");
-        background-size: 100%;
-        background-repeat: no-repeat;
       }
       .slide:nth-of-type(5) {
         background-image: url("https://images.unsplash.com/photo-1572095755818-8fd546d228a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80");
-        background-size: 100%;
-        background-repeat: no-repeat;
       }
 
      /* 
@@ -887,19 +877,20 @@
       height: 30px;
       width: 105px;
       background: rgba(255, 255, 255, 0.7);
-      font-size: 16px;
+      font-size: 15px;
       border-radius: 5px;
       border: 1px solid black;
     }
 
-    .addToCart {
-      height: 30px;
-      width: 95%;
+    .addToCartBtn {
+      height: 20px;
+      width: 95%;;
       color: black;
-      font-size: 24px;
+      font-size: 15px;
+      font-family: arial;
       border: 1px solid black;
       margin-left: 5px;
-      margin-top: 15px;
+      margin-top: 8px;
       background: rgba(255, 255, 255, 0.7);
       border-radius: 10px;
     }
@@ -908,7 +899,7 @@
 
     .cookieAmount {
       height: 30px;
-      width: 105px;
+      width: 60px;
       background: rgba(255, 255, 255, 0.7);
       font-size: 16px;
       text-align: center;
@@ -918,7 +909,7 @@
       border-radius: 5px;
     }
 
-    .quantityBtn {
+    .qtyBtn {
       display: inline-block;
       font-size: 20px;
       height: 30px;

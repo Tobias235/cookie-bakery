@@ -112,12 +112,12 @@
     border-radius: 15px;
   }
 
-  .rightSide {
-    float: right;
-    width: 40%;
+  .aboutRight {
+    width: 45%;
     text-align: center;
     margin-top: 15px;
     margin-right: 25px;
+    margin-left: 25px;
     margin-bottom: 15px;
   }
 
@@ -126,17 +126,17 @@
     margin-top: 15px;
   }
 
-  .leftSide {
-    float: left;
-    width: 40%;
+  .aboutLeft {
+    width: 45%;
     margin-top: 15px;
     margin-left: 25px;
+    margin-right: 20px;
     margin-bottom: 15px;
     text-align: center;
   }
 
   .aboutImg {
-    max-width: 60%;
+    width: 50%;
     height: auto;
     border: 5px solid black;
     margin: 10px;

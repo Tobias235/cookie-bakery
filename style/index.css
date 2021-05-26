@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 
-.panels {
+ .panels {
   min-height: 100vh;
   display: flex;
 }
@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-position: center;
   flex: 1;
-}
+} 
 
 .panel1 {
   background-image: url(https://images.unsplash.com/photo-1598305763406-d6044a667a25?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
@@ -86,6 +86,11 @@ a {
   position: absolute;
   top: 82%;
   left: 27%;
+}
+
+.icons img{
+  width: 40px;
+  height: 40px;
 }
 
 #landingBtn {

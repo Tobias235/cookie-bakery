@@ -160,7 +160,8 @@
       }
     
       .summaryPic {
-        width: 100%;
+        width: 110px;
+        height: 90px;
         border-radius: 10px;
       }
     
@@ -1396,7 +1397,7 @@ footer {
 
 html {
   height: 100%;
-  background-image: url(../pictures/indexBackground1.jpg);
+  background-image: url(../pictures/backgroundImg.jpg);
   background-size: cover;
   background-repeat: repeat;
 }
@@ -1440,6 +1441,7 @@ HEADER AND FOOTER STYLES BEGINS
     text-align: center;
     font-size: 22px;
     border: 1px solid white;
+    margin: 0;
   }
   
   .dropdown-content {
@@ -1468,8 +1470,8 @@ HEADER AND FOOTER STYLES BEGINS
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 240px;
-    min-width: 150px;
+    width: 95%;
+    height: 100%;
     background: rgb(167, 95, 74);
     box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;

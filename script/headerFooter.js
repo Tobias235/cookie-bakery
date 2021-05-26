@@ -9,16 +9,16 @@ template.innerHTML = `
 
     <div class="backgroundLogo"></div>
     <div class="logo">
-      <object data="../pictures/svgLogo.svg" id="logo" class="homeBtns" type="image/svg+xml"></object>
+      <img src="/pictures/svgLogo.svg" id="logo" class="homeBtns" alt="logo">
     </div>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Products</a>
+    <div class="dropdown">
+      <span class="dropbtn">Products</span>
       <div class="dropdown-content">
         <a href="cakes.html" class="cakesBtns" href="#">CAKES</a>
         <a href="cookies.html" class="cookiesBtns" href="#">COOKIES</a>
       </div>
-    </li>
-    <a id="searchBtn" class="btn">SEARCH</a>
+    </div>
+    <span id="searchBtn" class="btn">SEARCH</span>
     <a href="cart.html" id="cartBtn" class="btn">CART</a>
   </div>
 </div>
@@ -46,7 +46,7 @@ template.innerHTML = `
   </nav>
 </nav>
 <div class="logo">
-  <object data="../pictures/svgLogo.svg" id="logo" type="image/svg+xml"></object>
+    <img src="/pictures/svgLogo.svg" id="logo" class="homeBtns" alt="logo">
 </div>
 </section>
 

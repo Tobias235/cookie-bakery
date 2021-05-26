@@ -19,7 +19,7 @@ function displayCart() {
                       <div class="fullContainer">
                         <div class="leftCart">
                             <div class="product">
-                                <img src="${item.image}" class="cartImg">
+                                <img src="${item.image}" class="cartImg" alt="productPicture">
                                 <div class="cartText">
                                     <p class="productName">${item.title}</p>
                                 </div>
@@ -34,7 +34,9 @@ function displayCart() {
                                   if (item.quantity) {
                                     return (productContainer.innerHTML = `
                                       <button class="quantityBtn dec">-</button>
+                                      <label>
                                       <input type="number" class="productAmount" value="${item.quantity}">
+                                      </label>
                                       <button class="quantityBtn inc">+</button>`);
                                   } else if (item.size) {
                                     return (productContainer.innerHTML = `<p class="cakeSize">${item.size}</p>`);

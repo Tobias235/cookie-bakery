@@ -18,8 +18,8 @@ template.innerHTML = `
         <a href="cookies.html" class="cookiesBtns" href="#">COOKIES</a>
       </div>
     </div>
-    <span id="searchBtn" class="btn">SEARCH</span>
     <a href="cart.html" id="cartBtn" class="btn">CART</a>
+    <input type="text" placeholder="Search" class="btn searchInput link1">
   </div>
 </div>
 </nav>
@@ -43,6 +43,7 @@ template.innerHTML = `
       <a href="contact.html" class="link1 contactBtns">CONTACT</a>
       <a href="cakes.html" class="link1 cakesBtns">CAKES</a>
       <a href="cookies.html" class="link1 cookiesBtns">COOKIES</a>
+      <input type="text" placeholder="Search" class="btn searchInput">
   </nav>
 </nav>
 <div class="logo">
@@ -54,5 +55,5 @@ template.innerHTML = `
    <a href="https://www.vecteezy.com/free-vector/logo">Logo by Vecteezy</a>
 </footer>
 `
-
 document.body.appendChild(template.content);
+

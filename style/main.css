@@ -455,8 +455,7 @@
     }
 
     .cartImg {
-      width: 80%; 
-      height: 20%;
+      max-width: 40%; 
       margin-left: 10px;
       margin-right: 7px;
     }
@@ -1179,7 +1178,17 @@ HEADER AND FOOTER STYLES BEGINS
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+
+  .searchInput {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
   #logo {
     position: relative;
     top: 10%;
@@ -1280,7 +1289,7 @@ HEADER AND FOOTER STYLES BEGINS
   }
 
   #toggle1:checked ~ .menu1 {
-    height: 205px;
+    height: 235px;
     width: 30%;
     margin-top: 65px;
   }
@@ -1296,6 +1305,13 @@ HEADER AND FOOTER STYLES BEGINS
     z-index: 120;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  .searchInput {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80%;
+    height: 20px;
   }
 
   .link1 {

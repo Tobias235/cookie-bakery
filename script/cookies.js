@@ -7,7 +7,7 @@ for (let i = 0; i < incrementButton.length; i++) {
   button.addEventListener("click", (e) => {
     let buttonClicked = e.target;
     // console.log(buttonClicked);
-    let input = buttonClicked.parentElement.children[1];
+    let input = buttonClicked.parentElement.children[1].children[0];
     // console.log(input);
     //set newValue to be input.value + 1
     let newValue = parseInt(input.value) + 1;
@@ -23,16 +23,16 @@ for (let i = 0; i < decrementButton.length; i++) {
   button.addEventListener("click", (e) => {
     let buttonClicked = e.target;
     // console.log(buttonClicked);
-    let input = buttonClicked.parentElement.children[1];
+    let input = buttonClicked.parentElement.children[1].children[0];
     // console.log(input);
     let newValue = parseInt(input.value) - 1;
     // console.log(newValue);
     //conditional to check if newValue is greater than or equal to 0
-    if (newValue >= 0) {
+    if (newValue >= 1) {
       input.value = newValue;
     } else {
       //if less than 0, set it to 0
-      input.value = 0;
+      input.value = 1;
     }
   });
 }

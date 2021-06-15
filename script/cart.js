@@ -118,16 +118,17 @@ function manageQuantity() {
     button.addEventListener("click", (e) => {
       let buttonClicked = e.target;
       // console.log(buttonClicked);
-      let input = buttonClicked.parentElement.children[1];
+      let input = buttonClicked.parentElement.children[1].children[0];
       //currentProduct gets the product name
       let currentProduct =
         buttonClicked.parentElement.parentElement.parentElement.parentElement
           .children[0].children[0].children[1].children[0].innerText;
-      // console.log(currentProduct);
-      // console.log(input);
+      //console.log(currentProduct);
+      console.log(input);
       //set newValue equal to input.value and add 1 for each click
       let newValue = parseInt(input.value) + 1;
-      // console.log(newValue);
+      //console.log(newValue);
+      //console.log(input.value);
       input.value = newValue;
       //setting cartItems[name].quantity equal to newValue and push it to localstorage with updated quantity
       cartItems[currentProduct].quantity = newValue;
@@ -143,7 +144,7 @@ function manageQuantity() {
     button.addEventListener("click", (e) => {
       let buttonClicked = e.target;
       // console.log(buttonClicked);
-      let input = buttonClicked.parentElement.children[1];
+      let input = buttonClicked.parentElement.children[1].children[0];
       //currentProduct gets the product name
       let currentProduct =
         buttonClicked.parentElement.parentElement.parentElement.parentElement

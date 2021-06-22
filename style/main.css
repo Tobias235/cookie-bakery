@@ -218,6 +218,10 @@
       width: 90%;
       font-family: arial;
     }
+
+    textarea:focus::placeholder {
+      color: transparent;
+    }
   
     .inputForm {
       display: flex;
@@ -756,7 +760,7 @@
       margin: 0;
       margin-top: 3px;
     }
-  
+    
     .questionText {
       margin-bottom: 10px;
       font-size: 14px;
@@ -1184,9 +1188,12 @@ HEADER AND FOOTER STYLES BEGINS
     padding: 0;
   }
 
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ .container ::placeholder { 
     color: white;
-    opacity: 1; /* Firefox */
+  }
+
+  input:focus::placeholder {
+    color: transparent;
   }
 
   #logo {

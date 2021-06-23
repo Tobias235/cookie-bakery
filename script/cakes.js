@@ -1,6 +1,5 @@
 const addToCartButtons = document.querySelectorAll(".addToCartBtn");
-//Get data from localstorage if there is anything inside
-const products = JSON.parse(localStorage.getItem("items")) || [];
+const success = document.querySelector('.productSuccess');
 
 //iterate through the add to cart buttons and adds eventlistener to listen on click on each button
 for (var i = 0; i < addToCartButtons.length; i++) {
@@ -38,6 +37,11 @@ function setItems(e) {
   if (size === "0") {
     alert("Please Select Size");
   } else if (cartItems != null) {
+    //a popup notifcation that the order has been added successfully and removes after 5seconds
+    success.classList.add('successAdded');
+    setInterval(() => {
+      success.classList.remove('successAdded');
+    }, 5000);
     //if cart is not equal to null set currentProduct to product.title
     let currentProduct = product.title;
     //if cartItems with name of product equals to undefined
@@ -55,3 +59,4 @@ function setItems(e) {
   }
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
+

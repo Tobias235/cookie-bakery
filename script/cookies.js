@@ -1,5 +1,7 @@
 let incrementButton = document.querySelectorAll(".inc");
 let decrementButton = document.querySelectorAll(".dec");
+const success = document.querySelector('.productSuccess');
+const addToCartButtons = document.querySelectorAll(".addToCartBtn");
 
 //increment button
 for (let i = 0; i < incrementButton.length; i++) {
@@ -36,11 +38,6 @@ for (let i = 0; i < decrementButton.length; i++) {
     }
   });
 }
-
-// ADD TO CART FUNCTIONALITY
-const addToCartButtons = document.querySelectorAll(".addToCartBtn");
-//Get data from localstorage if there is anything inside
-const products = JSON.parse(localStorage.getItem("items")) || [];
 
 //iterate through the add to cart buttons and adds eventlistener to listen on click on each button
 for (var i = 0; i < addToCartButtons.length; i++) {
@@ -90,6 +87,13 @@ function setItems(e) {
       [product.title]: product,
     };
   }
-
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
+
+//popup notifcation that the order has been added successfully and removes after 5seconds
+addToCartButtons.forEach(btn => btn.addEventListener('click', () => {
+  success.classList.add('successAdded');
+  setInterval(() => {
+    success.classList.remove('successAdded');
+  }, 5000);
+}));

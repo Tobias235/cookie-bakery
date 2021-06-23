@@ -46,8 +46,10 @@ template.innerHTML = `
       <input type="text" placeholder="Search" class="btn searchInput">
   </nav>
 </nav>
+<div class="logoCenter">
 <div class="logo">
     <img src="/pictures/svgLogo.svg" id="logo" class="homeBtns" alt="logo">
+</div>
 </div>
 </section>
 

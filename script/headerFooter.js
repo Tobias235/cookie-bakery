@@ -9,7 +9,7 @@ template.innerHTML = `
 
     <div class="backgroundLogo"></div>
     <div class="logo">
-      <img src="/pictures/svgLogo.svg" id="logo" class="homeBtns" alt="logo">
+      <img src="../pictures/svgLogo.svg" id="logo" class="homeBtns" alt="logo">
     </div>
     <div class="dropdown">
       <span class="dropbtn">Products</span>

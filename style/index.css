@@ -64,7 +64,7 @@ body {
   color: white;
   text-align: center;
   font-size: 30px;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Abril Fatface", cursive, Sans-Serif;
   margin-top: 10px;
   margin-bottom: 5px;
 }

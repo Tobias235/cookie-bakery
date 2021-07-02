@@ -48,7 +48,7 @@ template.innerHTML = `
 </nav>
 <div class="logoCenter">
 <div class="logo">
-    <img src="/pictures/svgLogo.svg" id="logo" class="homeBtns" alt="logo">
+    <img src="../pictures/svgLogo.svg" id="logo" class="homeBtns" alt="logo">
 </div>
 </div>
 </section>

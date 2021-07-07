@@ -1040,13 +1040,12 @@
       }
     
       .orderRight {
-        width: 33%;
+        width: 34%;
       }
     
       .summaryPrice {
         display: flex;
         justify-content: flex-end;
-        font-size: 12px;
         margin: 0;
       }
     
@@ -1136,6 +1135,10 @@
         display: none;
       }
 
+      .mediaShow {
+        display: block;
+      }
+
       .mediaSummaryLeft {
         float: left;
         width: 43%;
@@ -1154,6 +1157,7 @@
       .textRight {
         font-size: 14px;
         margin: 10px;
+        margin-left: 0;
       }
 
       .textLeft {

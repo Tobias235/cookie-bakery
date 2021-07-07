@@ -1,15 +1,13 @@
 const summary = document.querySelector('.orderSummaryMedia');
 
-
-
 let cartItems = localStorage.getItem("productsInCart");
 cartItems = JSON.parse(cartItems);
 
 let cart = localStorage.getItem("totalCost");
 cart = parseInt(cart);
 
-console.log([cartItems]);
-console.log(cart);
+// console.log([cartItems]);
+// console.log(cart);
 
 let productContainer = document.querySelector(".orderSummaryRight");
 let mobileContainer = document.querySelector(".orderSummaryMedia");
@@ -92,7 +90,6 @@ mobileContainer.innerHTML += `
 function mobileSummary() {
     const cartSummary = document.querySelector('.mediaSummaryTop');
     const orderTitle = document.querySelector('.orderSummaryTitle');
-    const orderIcon = document.querySelector('.orderIcon');
     cartSummary.classList.toggle('mediaShow');
     if(cartSummary.classList.contains('mediaShow')) {
         orderTitle.innerHTML = 'Hide Order Summary';
